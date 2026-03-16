@@ -5,3 +5,4 @@ print(dic)
 del dic['name']
 del dic['helloworld']
 print(dic)
+print(dic.keys())
