@@ -10,3 +10,7 @@ console.log(false || false);
 
 console.log(!true);
 console.log(!false);
+
+const age = 27;
+const result = age >= 8 && age <= 19 ? "팩트" : "거짓말";
+console.log(result);
