@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자열 Switch</title>
+  </head>
+  <body>
+    <input id="input_text" type="text" />
+    <button id="btn" type="button">확인</button>
+    <div id="print"></div>
+  </body>
+</html>
+<script>
+  document.getElementById("btn").onclick = function () {
+    let char = document.getElementById("input_text").value;
+    let result = null;
+
+    switch (char) {
+      case "y":
+        result = "작업 수행";
+        break;
+      case "n":
+        result = "작업 수행안함";
+        break;
+      default:
+        result = "유효 X";
+        break;
+    }
+
+    document.getElementById("print").textContent = result;
+  };
+</script>

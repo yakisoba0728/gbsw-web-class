@@ -11,14 +11,19 @@
     <div id="print"></div>
   </body>
 </html>
+
 <script>
-  // 버튼 클릭 이벤트 리스너 등록
   document.getElementById("btn").onclick = function () {
-    let num = document.getElementById("input_number").value;
-    if (num % 2 == 0) {
-      alert("짝짝");
+    let num = Number(document.getElementById("input_number").value);
+
+    if (Number.isInteger(num)) {
+      if (num % 2 === 0) {
+        document.getElementById("print").textContent = "짝수";
+      } else {
+        document.getElementById("print").textContent = "홀수";
+      }
     } else {
-      alert("홀홀");
+      document.getElementById("print").textContent = "정수를 입력하쇼";
     }
   };
 </script>
