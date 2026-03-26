@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홀수/짝수</title>
+  </head>
+  <body>
+    <input id="input_number" type="number" />
+    <button id="btn" type="button">확인</button>
+    <div id="print"></div>
+  </body>
+</html>
+<script>
+  // 버튼 클릭 이벤트 리스너 등록
+  document.getElementById("btn").onclick = function () {
+    let num = document.getElementById("input_number").value;
+    if (num % 2 == 0) {
+      alert("짝짝");
+    } else {
+      alert("홀홀");
+    }
+  };
+</script>
