@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+      * {
+        font-family: "Gamja Flower", "Noto Sans";
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: gray;
+      }
+
+      .wrap {
+        width: 100%;
+        display: flex;
+      }
+      .profile_wrap {
+        font-size: 18px;
+        width: 50%;
+        background-color: #160862;
+        color: white;
+      }
+      .btn_wrap {
+        width: 50%;
+        color: white;
+      }
+
+      .btn_wrap button {
+        width: 200px;
+        height: 80px;
+        background-color: #d4ccff;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid;
+        box-shadow: 2px 2px 2px rgb(133, 133, 133);
+      }
+
+      .btn_wrap button:hover {
+        background-color: blanchedalmond;
+        box-shadow: 5px 5px 5px rgb(133, 133, 133);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요, 김동혁입니다.</h1>
+    <div class="wrap">
+      <div class="profile_wrap">
+        <div>나이:15</div>
+        <div>취미:개발</div>
+        <div>장래희망:개발자</div>
+      </div>
+      <div class="btn_wrap">
+        <button class="btn-1" onclick="goNaver()">버튼1</button>
+        <button class="btn-2">버튼2</button>
+        <button class="btn-3">버튼3</button>
+      </div>
+    </div>
+    <img
+      src="https://loutre.blockchair.net/w4/assets/images/logo/long_dark.svg"
+    />
+  </body>
+  <script>
+    function goNaver() {
+      location.href = "https://naver.com/";
+    }
+  </script>
+</html>
