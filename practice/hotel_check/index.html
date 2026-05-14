@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>호텔 체크인 관리</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      h1 {
+        color: wheat;
+      }
+
+      p {
+        color: green;
+        background-color: red;
+      }
+
+      .wrap {
+        margin: 0 auto;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>호텔 체크인 관리</h1>
+      <p>호텔의 체크인/체크아웃을 관리하는 웹 페이지입니다.</p>
+      <img src="/test.webp" />
+      <div class="checkin_wrap">
+        <h2>체크인 목록</h2>
+        <ul>
+          <li>just test</li>
+        </ul>
+      </div>
+      <div class="chcekin_wrap">
+        <h2>체크인</h2>
+        <input
+          id="input_name"
+          type="text"
+          placeholder="손님 이름을 입력하세요."
+        />
+        <button id="btn_checkin">체크인</button>
+      </div>
+      <div class="chcekout_wrap">
+        <h2>체크아웃</h2>
+        <input
+          id="input_name"
+          type="text"
+          placeholder="손님 이름을 입력하세요."
+        />
+        <button id="btn_checkout">체크아웃</button>
+      </div>
+      <div class="room_wrap">
+        <h2>빈 방 개수</h2>
+        <p id="room_cnt">100개</p>
+      </div>
+    </div>
+  </body>
+</html>
